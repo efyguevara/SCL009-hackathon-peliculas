@@ -1,16 +1,22 @@
+//Recarga la pagina
 const home = document.getElementById("home");
 home.addEventListener("click", () => {
     location.reload(true);
 })
 
+//Click del boton "buscar"
 const clickSearch = document.getElementById("clickSearcher");
 
+//Cuando escuche el click va a llamar a la data para buscar lo que el usurio ingreso en el input seach
 clickSearch.addEventListener("click", () => {
+    //texto ingresado por el usuario (titulo de pelicula)
     const inputSearch = document.getElementById("searcher").value;
+    //parametros para armar la url
     const params = { apikey: "376741b9", s: inputSearch, plot: "full" };
     const urlParams = new URLSearchParams(Object.entries(params));
 
     const list = document.getElementById('movies');
+    //llamada a la data con los parametros que se establecieron en URLSearchParams
     fetch(`https://www.omdbapi.com?${urlParams}`)
         .then((response) => {
             return response.json();
@@ -28,7 +34,6 @@ clickSearch.addEventListener("click", () => {
                     </div>`;
             });
             ;
-            //const showData = dataGender();   
         })
 });
 
