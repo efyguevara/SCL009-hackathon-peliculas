@@ -26,18 +26,40 @@ clickSearch.addEventListener("click", () => {
             data.Search.forEach((element) => {
                 list.innerHTML +=
                     `<div class="card col-sm-12 col-md-4 col-lg-2 text-center cards">
-                        <img src="${element.Poster}" class="card-img-top p-0" alt="${element.Title}">
+                        <img src="${element.Poster}" class="card-img-top" " alt="${element.Title} Imágen no Disponible">
                         <div class="card-body">
                             <h5 class="card-title">${element.Title}</h5>
-                        <p class="card-text">${element.Year}</p>
+                        </div>
+                        <div class="row text-center">
+                            <button id="e-${element.imdbID}" data-imdbID="${element.imdbID}" class="btn btn-lg btn-block btns btn-details">Ver más</button>
                         </div>
                     </div>`;
             });
-            ;
+            const buttons = document.querySelectorAll('.btn-details');
+            for (const button of buttons) {
+                button.addEventListener('click', movieDetails);
+            }
         })
 });
 
+//esta funcion muestra el detalle de la pelicula seleccionada
+function movieDetails(event) {
+    console.log('entre!');
+    
+    //parametros para armar la url
+    const imdbID = event.target.getAttribute("data-imdbID");//este atributo me da el valor del ID y lo toma como parametro para la url
+    const params = { apikey: "376741b9", i: `${imdbID}`, Plot: "full" };
+    const urlParams = new URLSearchParams(Object.entries(params));
 
-// dejar la constante "params" con el search en vez del titulo, y que una vez 
-// que se cliquee en la pelicula, se haga una nueva peticion que tome el title
-// ya seleccionado y no el search para que me mande toda la informacion
+    const list = document.getElementById("movies");
+    //llamada a la data con los parametros que se establecieron en URLSearchParams
+    fetch(`https://www.omdbapi.com?${urlParams}`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            list.innerHTML = "";
+            //una vez que hago click en el boton para ver los detalles me muestra la data en consola
+            console.log(data);
+        })
+}
