@@ -10,9 +10,18 @@ body {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     flex-direction: column;    
-    margin: 1rem;    
+    margin: 1rem;  
+  
 }
 
 h1 {
     color: white;
+}
+
+.btns {
+    background-color: rgb(233, 92, 36);
+}
+.form-control{
+    background-color: transparent;
+    border: 0;
 }
