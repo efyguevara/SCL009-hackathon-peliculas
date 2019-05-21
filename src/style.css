@@ -1,0 +1,34 @@
+body {
+
+    background: url('img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    object-position: left;
+    width: 1300px;
+}
+
+.imagen {
+    width: 200px;
+    height: 100px;
+}
+
+
+nav {
+    position: fixed;
+    z-index: 100;
+    padding: 0px 100px;
+    top: 0px;
+}
+
+h1 {
+    color: white;
+}
+
+
+.selecc {
+    display: inline-block;
+    padding-right: 10px;
+
+}
