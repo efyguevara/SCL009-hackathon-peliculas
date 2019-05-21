@@ -4,6 +4,28 @@ home.addEventListener("click", () => {
     location.reload(true);
 })
 
+//Modal y Botones (que habren y cierran el modal)
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("btn-modal")
+const span = document.getElementsByClassName("close")[0];
+
+//Click del Boton ¿Que es PopCorn Family y que habra el modal?
+btn.addEventListener("click", () => {
+modal.style.display = "block";
+})
+
+//Click del Boton para cerrar el Modal
+span.addEventListener("click", () => {
+modal.style.display = "none";
+})
+
+//Cuando el usuario haga click en cualquier lugar fuera del modal y se cierre
+window.addEventListener("click", (event) => {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+})
+
 //Click del boton "buscar"
 const clickSearch = document.getElementById("clickSearcher");
 
