@@ -1,21 +1,49 @@
 body {
-    background-color: rgb(43, 43, 43);
+  background-image: url(img/p.jpg);
+}
+
+header {
+    object-position: left;
+    background-color: #ffc107;
 }
 #movies {
     display:flex;
     justify-content: center; 
 }
+
+.align-center {
+        display: flex;
+    align-items: center;
+}
+
 .cards {
     border-radius: 0.5rem;
-    background-color: #ffffff81;
+    background-color: #ffffffda;
     color: rgb(0, 0, 0);
     flex-direction: column;
     border: 0;
+    margin-bottom: 1rem;
 }
 
 .card-body{
     padding: 0.25rem;
     min-height: 5rem;
+}
+
+.imagen {
+   position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+navbar-expand-lg {
+    z-index: 100;
+    padding: 20px 100px;
+    top: 40px;
+}
+
+select{
+    height: 1rem;       
 }
 
 .btns {
