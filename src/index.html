@@ -43,35 +43,19 @@
                             <option class="dropdown-item" id="Family" value="10751" href="#">Familiares</option>
                             <option class="dropdown-item" id="Fantasy" value="14" href="#">Fantasía</option>
                             <option class="dropdown-item" id="Action" value="878" href="#">Sci-Fi</option>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                         </select>
                     </li>
-                    
-                        <li class="nav-item">
-                                <select class="form-control"  id="year-movie">
-                                    <option class="nav-link dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" value="" href="#">Populares por Año</option>
-                                    <option class="dropdown-item"  value="2018" href="#">2018</option>
-                                    <option class="dropdown-item"  value="2017" href="#">2017</option>
-                                    <option class="dropdown-item"  value="2016" href="#">2016</option>
-                                    <option class="dropdown-item"  value="2015" href="#">2015</option>
-                                 
-                                    <!-- <div class="dropdown-divider"></div> -->
-                                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                                </select>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ordenar
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">AZ</a>
-                            <a class="dropdown-item" href="#">ZA</a>
-
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                        </div>
+                    <li class="nav-item">
+                        <input type="number" class="form-control" id="year-movie" placeholder="AÑO" min="1960" max="2019">
                     </li>
+
+                    <li class="nav-item">
+                        <select class="form-control"  id="rated-movie">
+                            <option class="nav-link dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" value="" href="#">Top Rated</option>
+                            <option class="dropdown-item"  value="desc" href="#">Más votadas</option>
+                            <option class="dropdown-item"  value="asc" href="#">Menos votadas</option>
+                            
+                        </select>
                     
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
