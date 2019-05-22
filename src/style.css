@@ -1,23 +1,15 @@
 body {
-<<<<<<< HEAD
 
     background-size: cover;
-=======
   background-image: url(img/p.jpg);
 }
 
 header {
-    object-position: left;
+    margin: auto;
     background-color: #ffc107;
->>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
 }
 
-header {
-    object-position: left;
-    width: 1300px;
-}
 
-<<<<<<< HEAD
 .imagen {
     width: 200px;
     height: 100px;
@@ -29,25 +21,6 @@ nav {
     z-index: 100;
     padding: 0px 100px;
     top: 0px;
-=======
-.align-center {
-        display: flex;
-    align-items: center;
-}
-
-.cards {
-    border-radius: 0.5rem;
-    background-color: #ffffffda;
-    color: rgb(0, 0, 0);
-    flex-direction: column;
-    border: 0;
-    margin-bottom: 1rem;
-}
-
-.card-body{
-    padding: 0.25rem;
-    min-height: 5rem;
->>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
 }
 
 .imagen {
@@ -69,7 +42,6 @@ select{
 .btns {
     background-color: rgb(233, 92, 36);
 }
-<<<<<<< HEAD
 .form-control{
     background-color: transparent;
     border: 0;
@@ -94,18 +66,27 @@ select{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: 60%; 
+    height: 100%; 
   }
   .modal-header {
     margin: auto;
     font-family: fantasy;
   }
-  
+  .modal-body {
+    text-align: left;
+    margin: auto;
+    width: 95%; 
+    height: 100%;
+
+  }
   .close {
+    background: #888
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 40%
   }
   
   .close:hover,
@@ -114,7 +95,3 @@ select{
     text-decoration: none;
     cursor: pointer;
   }
-=======
-
-
->>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42

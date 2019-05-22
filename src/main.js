@@ -6,13 +6,12 @@ home.addEventListener("click", () => {
     location.reload(true);
 })
 
-<<<<<<< HEAD
 //Modal y Botones (que habren y cierran el modal)
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("btn-modal")
 const span = document.getElementsByClassName("close")[0];
 
-//Click del Boton ¿Que es PopCorn Family y que habra el modal?
+//Click del Boton ¿Que es PopCorn Family? y que habra el modal
 btn.addEventListener("click", () => {
 modal.style.display = "block";
 })
@@ -31,14 +30,12 @@ modal.style.display = "none";
 
 //Click del boton "buscar"
 const clickSearch = document.getElementById("clickSearcher");
-=======
 function addListenerButtonDetails() {
     const buttons = document.querySelectorAll('.btn-details');//con este querysSelector se hace el evento click del boton
     for (const button of buttons) { //recorre cada boton 
         button.addEventListener('click', movieDetails);
     }
 }
->>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
 
 //esta funcion muestra el detalle de la pelicula seleccionada
 function movieDetails(event) {
@@ -213,3 +210,24 @@ window.onload = () => {
             });
     })
 }
+
+//Funcion del Modal
+//const containerModal = document.getElementById("container-modal");
+//const loadModal = (element) => {
+  //containerModal.innerHTML += `<div class="modal fade" id="${element.id}">
+  //<div class="modal-dialog">
+    //<div class="modal-content">
+    //<div class="modal-body">
+       //<h3 class="modal-title">${element.id.toUpperCase()}</h3>
+       //<img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="Card image cap">
+           //<div class="card-body">${element.title} 
+           //<div class="text-info"> ${element.tags} </div>
+          //</div>
+       //</div>
+       //<div class="modal-footer">
+         //<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       //</div>
+     //</div>
+   //</div>
+ //</div>`
+//};
