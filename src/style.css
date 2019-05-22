@@ -6,22 +6,20 @@ body {
     justify-content: center; 
 }
 .cards {
-    padding-bottom: 1.0rem;
-    background-color: #ffffff;
+    border-radius: 0.5rem;
+    background-color: #ffffff81;
     color: rgb(0, 0, 0);
-    flex-direction: column;    
-    margin: 1rem;  
-  
+    flex-direction: column;
+    border: 0;
 }
 
-h1 {
-    color: white;
+.card-body{
+    padding: 0.25rem;
+    min-height: 5rem;
 }
 
 .btns {
     background-color: rgb(233, 92, 36);
 }
-.form-control{
-    background-color: transparent;
-    border: 0;
-}
+
+
