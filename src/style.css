@@ -2,10 +2,6 @@ body {
   background-image: url(img/p.jpg);
 }
 
-header {
-    object-position: left;
-    background-color: #ffc107;
-}
 #movies {
     display:flex;
     justify-content: center; 
@@ -23,6 +19,9 @@ header {
     flex-direction: column;
     border: 0;
     margin-bottom: 1rem;
+  
+    
+    
 }
 
 .card-body{
