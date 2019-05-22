@@ -2,43 +2,52 @@ body {
   background-image: url(img/p.jpg);
 }
 
-header {
-    object-position: left;
-    width: 1300px;
-    background-color: #ffc107;
+#movies {
+  display: flex;
+  justify-content: center;
 }
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  border-radius: 0.5rem;
+  background-color: #ffffffda;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+  border: 0;
+  margin-bottom: 1rem;
+  font-size: 95%;
+align-items: center;
+}
+
+.movie-container {
+  padding: 1.5rem;
+  max-width: 100rem;
+  border: 1%;
+  border-radius: 1%;
+  align-items: flex-end;
+}
+
+.card-body {
+  padding: 0.1rem;
+  min-height: 5rem;
+}
+
 
 .imagen {
-   position: relative;
-    width: 150px;
-    height: 80px;
+  position: relative;
+  width: 150px;
+  height: 80px;
 }
 
-
-navbar-expand-lg {
-    z-index: 100;
-    padding: 20px 100px;
-    top: 40px;
-    position: absolute;
-width: 728px;
-height: 32px;
-
-background: #FFB800;
-}
-.navbar-expand-lg{
-    margin-bottom: px; 
-}
-select{
-    height: 1rem;       
-}
-h1 {
-    color: white;
+navbar-expand {
+  margin: auto;
 }
 
 .btns {
-    background-color: rgb(233, 92, 36);
-}
-.form-control{
-    background-color: transparent;
-    border: 0;
+  background-color: rgb(233, 92, 36);
+  font-style: italic;
 }

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,69 +14,71 @@
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand navbar-light bg-warning">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <div class="navbar-brand" id="home">
-            <img src="img/family.png" class="imagen" alt="">
+        <ul class="navbar-nav mr-auto align-center">
+          <div class="navbar-brand">
+            <img src="img/logo.png" class="imagen" alt="">
           </div>
+          <li class="nav-item active">
+            <a id="home" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">¿Qué es Porcorn Family?</a>
           </li>
-          <li class="nav-item">
-            <select class="form-control select" id="genre-movie">
-              <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">
-                Género</option>
-              <option class="dropdown-item" id="Animation" value="16" href="#">Animación</option>
-              <option class="dropdown-item" id="Comedy" value="35" href="#">Comedia</option>
-              <option class="dropdown-item" id="Thriller" value="53" href="#">Terror</option>
-              <option class="dropdown-item" id="Action" value="28" href="#">Acción</option>
-              <option class="dropdown-item" id="Adventure" value="12" href="#">Aventura</option>
-              <option class="dropdown-item" id="Drama" value="18" href="#">Drama</option>
-              <option class="dropdown-item" id="Family" value="10751" href="#">Familiares</option>
-              <option class="dropdown-item" id="Fantasy" value="14" href="#">Fantasía</option>
-              <option class="dropdown-item" id="Action" value="878" href="#">Sci-Fi</option>
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </select>
-          </li>
-
-          <li class="nav-item">
-            <select class="form-control" id="year-movie">
-              <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">
-                Populares por Año</option>
-              <option class="dropdown-item" value="2018" href="#">2018</option>
-              <option class="dropdown-item" value="2017" href="#">2017</option>
-              <option class="dropdown-item" value="2016" href="#">2016</option>
-              <option class="dropdown-item" value="2015" href="#">2015</option>
-
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </select>
-         
         </ul>
+
         <form class="form-inline my-2 my-lg-0">
-          <input id="searcher" class="form-control mr-sm-2 search-div" type="search" placeholder="Search"
+          <input id="searcher" class="form-control mr-sm-2 search-div bg-white" type="search" placeholder="Search"
             aria-label="Search">
-          <button id="clickSearcher" class="btn btn-dark my-2 my-sm-0" type="button">Search</button>
+          <button id="clickSearcher" class="btn btn-dark my-2 my-sm-0 btns" type="button">Search</button>
         </form>
       </div>
     </nav>
   </header>
   <section>
-    <div id="root" class="container pt-5">
-      <div id="imprData" class="row">
+    <div id="root" class="container pt-5 ">
+      <div id="imprData" class="row ">
+        <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
+          <label for="genre-movie select" class="text-white">Género</label>
+          <select class="form-control" id="genre-movie">
+            <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">
+              Género</option>
+            <option class="dropdown-item" id="Animation" value="16" href="#">Animación</option>
+            <option class="dropdown-item" id="Comedy" value="35" href="#">Comedia</option>
+            <option class="dropdown-item" id="Thriller" value="53" href="#">Terror</option>
+            <option class="dropdown-item" id="Action" value="28" href="#">Acción</option>
+            <option class="dropdown-item" id="Adventure" value="12" href="#">Aventura</option>
+            <option class="dropdown-item" id="Drama" value="18" href="#">Drama</option>
+            <option class="dropdown-item" id="Family" value="10751" href="#">Familiares</option>
+            <option class="dropdown-item" id="Fantasy" value="14" href="#">Fantasía</option>
+            <option class="dropdown-item" id="Action" value="878" href="#">Sci-Fi</option>
+          </select>
+
+        </div>
+        <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
+          <label for="year-movie select" class="text-white">Año</label>
+          <input type="number" class="form-control " id="year-movie" placeholder="AÑO" min="1960" max="2019">
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
+          <label for="year-movie select" class="text-white">Ranking</label>
+          <select class="form-control " id="rated-movie">
+            <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">Top
+              Rated</option>
+            <option class="dropdown-item" value="desc" href="#">Más votadas</option>
+            <option class="dropdown-item" value="asc" href="#">Menos votadas</option>
+          </select>
+        </div>
         <div id="movies" class="row">
         </div>
       </div>
-    </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
