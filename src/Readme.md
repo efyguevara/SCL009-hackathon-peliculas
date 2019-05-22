@@ -23,6 +23,9 @@ El rango etario en su mayoría predominante resulto entre 20- 38 años, de esta 
 
 ## Fase Prototipado
 
+<img src="img/1.png" alt="Captura-de-pantalla-2" border="0"></a>
+<img src="img/2.png" alt="Captura de pantalla>
+
 ## Historias de usuario
 
 
