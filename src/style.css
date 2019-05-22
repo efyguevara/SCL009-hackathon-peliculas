@@ -1,34 +1,39 @@
 body {
-
-    background: url('img/fondo.jpg') no-repeat center center fixed;
-    background-size: cover;
+  background-image: url(img/p.jpg);
 }
 
 header {
     object-position: left;
     width: 1300px;
+    background-color: #ffc107;
 }
 
 .imagen {
-    width: 200px;
-    height: 100px;
+   position: relative;
+    width: 150px;
+    height: 80px;
 }
 
 
-nav {
-    position: fixed;
+navbar-expand-lg {
     z-index: 100;
-    padding: 0px 100px;
-    top: 0px;
+    padding: 20px 100px;
+    top: 40px;
 }
-
+.navbar-expand-lg{
+    margin-bottom: 30px; 
+}
+select{
+    height: 1rem;       
+}
 h1 {
     color: white;
 }
 
-
-.selecc {
-    display: inline-block;
-    padding-right: 10px;
-
+.btns {
+    background-color: rgb(233, 92, 36);
+}
+.form-control{
+    background-color: transparent;
+    border: 0;
 }
