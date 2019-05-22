@@ -27,6 +27,7 @@ function movieDetails(event) {
         })
         .then((data) => {
             list.innerHTML = "";
+            list.classList.add("movie-container")
             data.results.forEach((element) => {
                 console.log(data)
                 list.innerHTML +=
@@ -55,6 +56,7 @@ window.onload = () => {
         })
         .then((data) => {
             list.innerHTML = "";
+            list.classList.add("movie-container")
             data.results.forEach((element) => {
                 list.innerHTML +=
                     `<div class="col-sm-12 col-md-4 col-lg-2">
@@ -88,6 +90,7 @@ window.onload = () => {
             })
             .then((data) => {
                 list.innerHTML = "";
+                list.classList.add("movie-container")
                 data.Search.forEach((element) => {
                     //console.log(data)
                     list.innerHTML +=
@@ -117,6 +120,7 @@ window.onload = () => {
             })
             .then((data) => {
                 list.innerHTML = "";
+                 list.classList.add("movie-container")
                 data.results.forEach((element) => { 
                     list.innerHTML +=
                         `<div class="col-sm-12 col-md-4 col-lg-2">
