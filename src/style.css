@@ -19,9 +19,14 @@ navbar-expand-lg {
     z-index: 100;
     padding: 20px 100px;
     top: 40px;
+    position: absolute;
+width: 728px;
+height: 32px;
+
+background: #FFB800;
 }
 .navbar-expand-lg{
-    margin-bottom: 30px; 
+    margin-bottom: px; 
 }
 select{
     height: 1rem;       
