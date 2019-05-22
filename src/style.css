@@ -13,14 +13,14 @@ body {
 }
 
 .cards {
-  border-radius: 0.5rem;
-  background-color: #ffffffda;
-  color: rgb(0, 0, 0);
-  flex-direction: column;
-  border: 0;
-  margin-bottom: 1rem;
-  font-size: 95%;
-align-items: center;
+    border-radius: 0.25rem;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    border: 0;
+    margin-bottom: 1rem;
+    font-size: 95%;
+    align-items: center;
 }
 
 .movie-container {
@@ -43,6 +43,10 @@ align-items: center;
   height: 80px;
 }
 
+navbar-expand-lg {
+    margin: auto;
+}
+
 navbar-expand {
   margin: auto;
 }
@@ -50,4 +54,5 @@ navbar-expand {
 .btns {
   background-color: rgb(233, 92, 36);
   font-style: italic;
+  color: white;
 }
