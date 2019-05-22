@@ -1,18 +1,39 @@
 body {
-    background-color: rgb(43, 43, 43);
-}
-#movies {
-    display:flex;
-    justify-content: center; 
-}
-.cards {
-    padding-bottom: 1.0rem;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    flex-direction: column;    
-    margin: 1rem;    
+  background-image: url(img/p.jpg);
 }
 
+header {
+    object-position: left;
+    width: 1300px;
+    background-color: #ffc107;
+}
+
+.imagen {
+   position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+
+navbar-expand-lg {
+    z-index: 100;
+    padding: 20px 100px;
+    top: 40px;
+}
+.navbar-expand-lg{
+    margin-bottom: 30px; 
+}
+select{
+    height: 1rem;       
+}
 h1 {
     color: white;
+}
+
+.btns {
+    background-color: rgb(233, 92, 36);
+}
+.form-control{
+    background-color: transparent;
+    border: 0;
 }
