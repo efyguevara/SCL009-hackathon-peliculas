@@ -1,6 +1,15 @@
 body {
+<<<<<<< HEAD
 
     background-size: cover;
+=======
+  background-image: url(img/p.jpg);
+}
+
+header {
+    object-position: left;
+    background-color: #ffc107;
+>>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
 }
 
 header {
@@ -8,6 +17,7 @@ header {
     width: 1300px;
 }
 
+<<<<<<< HEAD
 .imagen {
     width: 200px;
     height: 100px;
@@ -19,15 +29,47 @@ nav {
     z-index: 100;
     padding: 0px 100px;
     top: 0px;
+=======
+.align-center {
+        display: flex;
+    align-items: center;
 }
 
-h1 {
-    color: white;
+.cards {
+    border-radius: 0.5rem;
+    background-color: #ffffffda;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.card-body{
+    padding: 0.25rem;
+    min-height: 5rem;
+>>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
+}
+
+.imagen {
+   position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+navbar-expand-lg {
+    z-index: 100;
+    padding: 20px 100px;
+    top: 40px;
+}
+
+select{
+    height: 1rem;       
 }
 
 .btns {
     background-color: rgb(233, 92, 36);
 }
+<<<<<<< HEAD
 .form-control{
     background-color: transparent;
     border: 0;
@@ -72,3 +114,7 @@ h1 {
     text-decoration: none;
     cursor: pointer;
   }
+=======
+
+
+>>>>>>> f62de9ebbcf3d2ce6101b28cf0e4067c2b940f42
