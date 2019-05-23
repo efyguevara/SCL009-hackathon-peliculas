@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,94 +14,86 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" class="imagen" alt="Logo PopCOrn Family"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto align-left">
+                    <li class="nav-item active">
+                        <a id="home" class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom"
+                            title="Volver a la página principal">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">¿Qué es Porcorn Family?<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <div class="navbar-brand">
-            <img src="img/pop.png" class="imagen" alt="">
-          </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#">¿Qué es Porcorn Family?</a>
-          </li>
-          <li class="nav-item">
-            <select class="form-control select" id="genre-movie">
-              <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">
-                Género</option>
-              <option class="dropdown-item" id="Animation" value="16" href="#">Animación</option>
-              <option class="dropdown-item" id="Comedy" value="35" href="#">Comedia</option>
-              <option class="dropdown-item" id="Thriller" value="53" href="#">Terror</option>
-              <option class="dropdown-item" id="Action" value="28" href="#">Acción</option>
-              <option class="dropdown-item" id="Adventure" value="12" href="#">Aventura</option>
-              <option class="dropdown-item" id="Drama" value="18" href="#">Drama</option>
-              <option class="dropdown-item" id="Family" value="10751" href="#">Familiares</option>
-              <option class="dropdown-item" id="Fantasy" value="14" href="#">Fantasía</option>
-              <option class="dropdown-item" id="Action" value="878" href="#">Sci-Fi</option>
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </select>
-          </li>
-
-          <li class="nav-item">
-            <select class="form-control" id="year-movie">
-              <option class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" value="" href="#">
-                Populares por Año</option>
-              <option class="dropdown-item" value="2018" href="#">2018</option>
-              <option class="dropdown-item" value="2017" href="#">2017</option>
-              <option class="dropdown-item" value="2016" href="#">2016</option>
-              <option class="dropdown-item" value="2015" href="#">2015</option>
-
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-            </select>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Ordenar
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">AZ</a>
-              <a class="dropdown-item" href="#">ZA</a>
-
-              <!-- <div class="dropdown-divider"></div> -->
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input id="searcher" class="form-control mr-sm-2 search-div" type="search" placeholder="Ej. Frozen"
+                        aria-label="Search" data-toggle="tooltip" data-placement="bottom"
+                        title="Ingresa el nombre de una película">
+                    <button id="clickSearcher" class="btn btn-dark my-2 my-sm-0 btns" type="button">Search</button>
+                </form>
             </div>
-          </li>
+        </nav>
+    </header>
+    <section>
+        <div id="root" class="container pt-5 ">
+            <div id="imprData" class="row ">
+                <div class="col-sm-12 col-md-4 col-lg-4 pb-3 text-left">
+                    <label class=""><h5>Género:</h5></label>    
+                    <select class="form-control" id="genre-movie" data-toggle="tooltip" data-placement="bottom"
+                        title="Selecciona un Género">
+                        <option class="dropdown-item" value="">--Seleccionba un Género--</option>
+                        <option class="dropdown-item" id="Animation" value="16">Animación</option>
+                        <option class="dropdown-item" id="Comedy" value="35">Comedia</option>
+                        <option class="dropdown-item" id="Thriller" value="53">Terror</option>
+                        <option class="dropdown-item" id="Action" value="28">Acción</option>
+                        <option class="dropdown-item" id="Adventure" value="12">Aventura</option>
+                        <option class="dropdown-item" id="Drama" value="18">Drama</option>
+                        <option class="dropdown-item" id="Family" value="10751">Familiares</option>
+                        <option class="dropdown-item" id="Fantasy" value="14">Fantasía</option>
+                        <option class="dropdown-item" id="Sci-Fi" value="878">Ciencia Ficción</option>
+                    </select>
 
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input id="searcher" class="form-control mr-sm-2 search-div" type="search" placeholder="Search"
-            aria-label="Search">
-          <button id="clickSearcher" class="btn btn-dark my-2 my-sm-0" type="button">Search</button>
-        </form>
-      </div>
-    </nav>
-  </header>
-  <section>
-    <div id="root" class="container pt-5">
-      <div id="imprData" class="row">
-        <div id="movies" class="row">
+                </div>
+                <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
+                    <label class=""><h5>Año:</h5></label>
+                    <input type="number" class="form-control " id="year-movie" placeholder="Ej. 2015" min="1960"
+                        max="2019" data-toggle="tooltip" data-placement="bottom"
+                        title="Ingresa el año que desear buscar">
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
+                    <label class=""><h5>Ranking:</h5></label>
+                    <select class="form-control " id="rated-movie" data-toggle="tooltip" data-placement="bottom"
+                        title="Selecciona una categoría">
+                        <option class="dropdown-item">--Selecciona una opción--</option>
+                        <option class="dropdown-item" value="desc">Más votadas</option>
+                        <option class="dropdown-item" value="asc">Menos votadas</option>
+                    </select>
+                </div>
+                <div id="movies" class="row movie-container">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="main.js"></script>
-  <script src="logic.js"></script>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="logic.js"></script>
 </body>
 
 </html>
