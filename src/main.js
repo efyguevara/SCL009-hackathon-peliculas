@@ -36,9 +36,9 @@ function movieDetails(event) {
                 }
 
                 list.innerHTML +=
-                    `<div class="col-sm-12 col-md-4 col-lg-2">
+                    `<div class="col-12 col-sm-12 col-md-4 col-lg-2">
                 <div class="card text-center cards">
-                    <img src="${imageUrl}" class="card-img-top"  alt="${element.original_title} Imágen no Disponible">
+                    <img src="${imageUrl}" class="card-img-top img-card"  alt="${element.original_title} Imágen no Disponible">
                     <button id="e-${element.id}" data-id="${element.id}" class="btn btns btn-lg btn-block btn-details">Ver más</button>
                 </div>
             </div>`;
@@ -69,7 +69,7 @@ window.onload = () => {
                 list.innerHTML +=
                     `<div class="col-sm-12 col-md-4 col-lg-2">
                 <div class="card text-center cards">
-                    <img src="${imageUrl}" class="card-img-top"  alt="${element.original_title} Imágen no Disponible">
+                    <img src="${imageUrl}" class="card-img-top img-card"  alt="${element.original_title} Imágen no Disponible">
                     <button id="e-${element.id}" data-id="${element.id}" class="btn btns btn-lg btn-block btn-details">Ver más</button>
                 </div>
             </div>`;
@@ -100,7 +100,7 @@ window.onload = () => {
                     list.innerHTML +=
                         `<div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="card text-center cards">
-                        <img src="${element.Poster}" class="card-img-top"  alt="${element.Title} Imágen no Disponible">
+                        <img src="${element.Poster}" class="card-img-top img-card"  alt="${element.Title} Imágen no Disponible">
                         
                         <button id="e-${element.imdbID}" data-id="${element.imdbID}" class="btn btns btn-lg btn-block btn-details   ">Ver más</button>
                     </div>
@@ -155,7 +155,7 @@ window.onload = () => {
                     list.innerHTML +=
                         `<div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="card text-center cards">
-                        <img src="${imageUrl}" class="card-img-top"  alt="${element.original_title} Imágen no Disponible">
+                        <img src="${imageUrl}" class="card-img-top img-card"  alt="${element.original_title} Imágen no Disponible">
                         <button id="e-${element.id}" data-id="${element.id}" class="btn btns btn-lg btn-block btn-details">Ver más</button>
                     </div>
                 </div>`;
