@@ -1,3 +1,4 @@
+
 body {
   background-image: url(img/p.jpg);
 }
@@ -36,11 +37,10 @@ body {
   min-height: 5rem;
 }
 
-
 .imagen {
   position: relative;
-  width: 150px;
-  height: 80px;
+  width: 9.375rem;
+  height: 5rem;
 }
 
 navbar-expand-lg {
@@ -48,11 +48,27 @@ navbar-expand-lg {
 }
 
 navbar-expand {
-  margin: auto;
+    margin: auto;
 }
 
 .btns {
-  background-color: rgb(233, 92, 36);
-  font-style: italic;
-  color: white;
+    border:0rem;
+    width: 9.81rem;
+    background-color: rgb(233, 92, 36);
+    font-style: italic;
+    color: white;
+}
+
+.img-card{
+    width: 9.81rem;
+    height: 14.75rem;
+}
+
+.img-modal{
+    width: 10rem;
+    height: 15rem;
+}
+
+.modal-header{
+    font: fantasy;
 }

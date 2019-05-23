@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Popcorn Family</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PopCorn Family</title>
 </head>
 
 <body>
@@ -26,10 +26,11 @@
                 <ul class="navbar-nav mr-auto align-left">
                     <li class="nav-item active">
                         <a id="home" class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom"
-                            title="Volver a la página principal">Home<span class="sr-only">(current)</span></a>
+                            title="Volver a la página principal"><span class="font-weight-bold">Home</span><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">¿Qué es Porcorn Family?<span class="sr-only">(current)</span></a>
+                        <a href="#modal-description" class="nav-link" data-toggle="modal"><span class="font-weight-bold">¿Qué es
+                            PorCorn Family?</span><span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
 
@@ -45,11 +46,13 @@
     <section>
         <div id="root" class="container pt-5 ">
             <div id="imprData" class="row ">
-                <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
-                    <label class=""><h5>Género</h5></label>
+                <div class="col-sm-12 col-md-4 col-lg-4 pb-3 text-left">
+                    <label class="">
+                        <h5>Género:</h5>
+                    </label>
                     <select class="form-control" id="genre-movie" data-toggle="tooltip" data-placement="bottom"
                         title="Selecciona un Género">
-                        <option class="dropdown-item">--Seleccionba un Género--</option>
+                        <option class="dropdown-item" value="">--Selecciona un Género--</option>
                         <option class="dropdown-item" id="Animation" value="16">Animación</option>
                         <option class="dropdown-item" id="Comedy" value="35">Comedia</option>
                         <option class="dropdown-item" id="Thriller" value="53">Terror</option>
@@ -63,14 +66,18 @@
 
                 </div>
                 <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
-                    <label class=""><h5>Año:</h5></label>
+                    <label class="">
+                        <h5>Año:</h5>
+                    </label>
                     <input type="number" class="form-control " id="year-movie" placeholder="Ej. 2015" min="1960"
                         max="2019" data-toggle="tooltip" data-placement="bottom"
                         title="Ingresa el año que desear buscar">
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-l-4 pb-3 text-left">
-                    <label class=""><h5>Ranking:</h5></label>
+                    <label class="">
+                        <h5>Ranking:</h5>
+                    </label>
                     <select class="form-control " id="rated-movie" data-toggle="tooltip" data-placement="bottom"
                         title="Selecciona una categoría">
                         <option class="dropdown-item">--Selecciona una opción--</option>
@@ -83,6 +90,69 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal de descripcion de página -->
+    <div id="modal-description" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h3 class="modal-title">¿Qué es PopCorn Family?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                       
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+
+                            <p>PopCorn Family es una aplicación web, drigida a toda la familia. Podrás
+                                ver la
+                                información de las peliculas realizando busqueda por nombre, o, filtrando por género,
+                                año y ranking</p>
+                            <h5>Modo de uso</h5>
+                            <p>Para comenzar a utilizar PopCorn Family, dirigete las opciones que se encuentran en la
+                                parte superior de la pagina, con ellas, podras realizar filtro por género de la
+                                pelicula, año, y el ranking de las más y menos votadas.</p>
+                        </div> <div class="col-sm-12 col-md-4 col-lg-4">
+                            <img src="img/hi.png" class="img-modal mx-auto d-block rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de las cards -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 id="modal-title" class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <img id="modal-img" class="img-modal mx-auto d-block rounded" />
+                            <p id="modal-average" class="text-center"></p>
+                            <p id="modal-release" class="text-center"></p>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                            <p id="modal-sinopsis" class=""></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btns btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
