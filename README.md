@@ -1,91 +1,106 @@
-# "Hackathon" de final de _Common Core_, películas
+# BienVenidos a PopCorn Family!
 
- ## Índice
+<img src="img/screen.png" alt="screen1" border="0">
 
- * [Preámbulo](#preámbulo)
-* [Resumen del proyecto](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Consideraciones técnicas](#consideraciones-técnicas)
+## *¿Qué es PopCorn Family?*
 
- ***
+*PopCorn Family* Es una aplicación web dirigida para toda la familia, en dónde podrás visualizar la información filtrando por género, las películas más populares por año, y las más votadas.
 
- ## Preámbulo
+## Modo de Uso:
 
- Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+Para comenzar a utilizar la aplicación, dirigete a las opciones de selección que se encuentran en la parte superior, aquí podrás seleccionar la acción que desees ejecutar, por ejemplo si quieres filtrar por género esta opción te dirigirá a un selector que se desplegara con los parámetros a elección; también puedes filtrar por año, las más aclamadas por la audiencia y también podrás buscarlas por nombre.
 
- ![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+Luego se desplegarán en la pantalla las películas Aparecerán en pantalla la o las imagenes que coincidan con tu busqueda. Para acceder a la información de la pelicula haz click en la imagen y se desplegará la información adicional.
 
- ## Resumen del proyecto
+## Planificación del Proyecto
 
- Durante estos días crearás el producto que tú quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en Netflix,
-uno de pelis de terror... o... ¡lo que quieras!
+Para poder optimizar de mejor manera el proyecto distribuimos las tareas y organización a través de [Trello](https://trello.com/b/PPajF3na/hackaton).
 
- ## Consideraciones generales
+## Definición Usuarios
 
- * Este proyecto se debe resolver en equipos de hasta 4 personas.
-* Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-* Tiempo para completar el reto: 3 días.
+Para poder conocer y llegar a nuestro usuario realizamos una encuesta online para poder delimitar cuál es el tipo de información que requiere nuestro usuario o espera poder obtener de la interfaz que diseñamos, y poder también dirigirnos a un grupo etario promedio; en un principio optamos por dirigirnos aun grupo familiar, es decir a encuestas para padres, pero en el camino la encuesta y los feedbacks recibidos nos derivamos a usuarios que quisieran compartir más.
 
+El rango etario en su mayoría predominante resulto entre 20- 38 años, de esta forma nos permitió enfocarnos mejor.
+<img src="img/1.png" alt="Captura-de-pantalla-2" border="0">
 
- ## Objetivos de aprendizaje
+En esta pregunta queriamos buscar el enfoque, acerca de cual es la plataforma más utilizada, las alternativas mas predoninantes fueron: Netflix, Internet y televisión por cable.
 
- * Enfrentarte a un reto de corta duración en el que pongas en práctica todo
-lo aprendido hasta ahora.
-* Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-personas en un equipo de trabajo, mayor complejidad para: tener un entendimiento
-común, seguir el flujo de trabajo, buscar consensos, etc.
+<img src="img/2.png" alt="Captura-de-pantalla-3" border="0">
 
- ## Parte Obligatoria
+En esta pregunta buscabamos obtener tres parámetros para enfocarnos, las alternativas eran: título, año, género e idioma; y en base a los resultados obtnenidos decidímos hacerlo por género y año.
 
- * Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-y las inspiraciones utilizadas para definir el producto.
-* Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-proyecto.
-* El producto deberá presentarse publicado en github pages.
+<img src="img/5.png" alt="Captura-de-pantalla-4" border="0">
 
- ## Consideraciones técnicas
+Por último, esta pregunta nos permitió obtener el último parámetro que es el de prioms o las películas más votadas y estableciendo un ranking.
 
- * El diseño visual de los componentes es de libre elección de las estudiantes,
-sin embargo, si no quieren crearlo desde cero, pueden utilizar el que
-propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/view).
-* Deberán usar al menos un framework de css.
+## Fase Prototipado
+
+Iniciamos la fase de prototipado después de reconocer al usuario; avanzamos con el proceso de la creación, paso a paso para dar con el resultado esperado con nosotras, enfocado principalmente en el usuario.
+
+*Diagrama de flujo*: es un bosquejo que permite visualizar los elementos que tendrá la interfaz, teniendo en cuenta los posibles cambios en la filtración.
+
+<img src="img/flujo.png" alt="Diagrama-de-flujo" border="1">
 
 
-## Horario
+## Historias de usuario
 
-|       |   Jueves          |  Viernes                     |Miércoles                      | Jueves                                |
-|------ | ------------------| ---------------------------- | ----------------------------- | ------------------------------------- |
-| 8:00  |                   |  Daily por squad             |  Daily por squad              | Daily por squad                       |
-| 9:00  |                   |  Hackeo                      |  Hackeo                       | Hackeo/Detalles finales               |         
-| 10:00 |                   |                              |                               | Inscripción de aplicaciones           |
-| 11:00 |                   |                              |                               | Feria de demostraciones               |           
-| 12:00 | Kick off hackaton |                              |                               | Presentación de mejores squads        |
-|>13:00 |Sesión de planificación|                          |                               | Deliberación del jurado               |
-| 20:00 |                   |                              |                               |                                       |
+Entonces luego de analizar nuestras encuestas, se desarrollan distintas historias de usuario que nos permiten ver las necesidades, y encontrar la forma a través de los criterios de aceptación lograr resolver.
 
-## Tips para la organización de trabajo entre UX y Front end 
+Durante el proceso de PopCorn Family, nacieron nuevas historias de usuario que nos permitieron desarrollar aún más la página y volverla más activa.
 
-* Las UX y FE entienden en conjunto el reto en el que van a trabajar, se organizan y arman sus primeros bocetos.
-* Con los primeros bocetos/ideas, las FE pasan a crear su ambiente de desarrollo y a crear componentes atómicos que luego les sea fácil personalizar con CSS y utilizar para crear interfaces más complejas. Además, las FE empiezan también a trabajar en la lógica de la aplicación. Mientras tanto, las UX crean una guía de estilos, los flujos de usuarios, hacen un prototipo más completo y lo testean.
-* Las UX comparten el prototipo testeado, para que el equipo empiece a personalizar los componentes y a ponerlos en conjunto.
-* Las UX hacen QA y testing con los releases que vayan haciendo las FE.
-* Planifiquen, historias de usuario y definition of done son importantísimos.
-* Usen las ceremonias ágiles para saber en que van como equipo, dailys y retrospectivas diarias son esenciales.
-* Iteren, iteren, iteren.
+*Historia de Usuario 1*: Yo como fanático del cine de animación quiero utilizar esta aplicación para poder acceder a la información desde mi hogar.
+*Criterios de Aceptación*: Crear la base de HTML, definiendo cada pantalla de la utilización del Filtro y creación de modal.
 
-## ¿Qué es la Feria de demos?
+*Historia de Usuario 2*: Yo como fanático del cine me gustaría poder filtrar las películas por género y así conocer más y poder ampliar el conocimiento del mundo del cine.
+*Criterios de aceptación*: en html crear en el navbar un selector que permita filtrar por género.
 
-La feria de demos se realizará el día de las presentaciones, consiste en la dinámica de “speed dating”, cada squad presentará su demo durante 3 minutos a un grupo de personas, entre ellos los jurados de la Hackathon. Luego de los 3 minutos sonará una chicharra y el grupo de personas rotará al siguiente squad, de esta forma deberán presentar durante una hora. 
+*Historia de Usuario 3*: Yo como aficionado del cine de terror me gustaría poder ver  las películas más aclamadas.
+Criterios de Aceptación: Crear un selector que permita ver las películas mejor evaluadas por la critica.
 
-* Las demos no deben durar más de 3 minutos y deben mostrar el producto y las tecnologías usadas.
-* Los asistentes van a votar por los 4 equipos finalistas, quienes tendrán la oportunidad de hacer su demo a todo el público para poder elegir un ganador. 
+*Historia de Usuario 4*: Yo como aficionada del cine para mis hijos quiero poder filtrar por género y año, y así poder ver diferentes películas con más historias.
+*Criterios de Aceptación*: Luego de crear un selector para filtrar por género, Crear un selector donde el usuario pueda filtrar por año. 
+
+*Historia de usuario 5*: Yo como aficionada a las películas de aventura, acción y ciencia ficción, quiero ver la ficha de las películas que seleccioné y conocer más sobre ellas.
+*Criterios de aceptación*: Se creará un modal que se desplegará al momento de seleccionar por el usuario una opción de película; luego se mostrara una ficha con las características de la película.
+
+## Fase de Prototipado
+
+- Prototipo de Baja Fidelidad
+
+Usando el diagrama de flujo como guia, y las encuestas, a través de papel, creamos un boceto con los diferentes usos, e interfaces que se veran en la aplicación.
+
+
+- Prototipo de Alta Fidelidad
+
+Después que se reconoce al usuario se crea en Figma el prototipo de Alta Fidelidad, donde se definieron los colores, el tipo de información a entregar y como lograr entregarla de forma ordenada y apropiada al usuario. 
+En base al fedback entregado por las entrevistas con el prototipo de baja fidelidad, se hicieron algunos cambios.
+
+Desarrollado en Figma, y exportado a Zeplin [aquí puedes visualizar]()
+
+Tareas a realizar:
+-
+-
+-
+-
+Problemas observados:
+
+Videos:
+-
+-
+-
+##Consideraciones:
+
+*Utilización de la Interfaz : HTML, JS, CSS.*
+- HTML: se utiliza para darle formato a la página; trabajo responsive y utilización de Bootstrap; unión de JS y Css.
+
+- JS: manejo del Dom, y uso de la API() 
+- CSS: es utilizado para el manejo de los estilos, para la página, es responsive.
+
+*Hackaton:* trabajo colaborativo, utilizando Git y GitHub
+
+Implementación de la aplicación 
+[Aquí]() puedes acceder al deploy en gh-pages.
+
+
+
+
