@@ -1,74 +1,75 @@
-
 body {
-  background-image: url(img/p.jpg);
-}
-
-#movies {
-  display: flex;
-  justify-content: center;
-}
-
-.align-center {
-  display: flex;
-  align-items: center;
-}
-
-.cards {
-    border-radius: 0.25rem;
-    background-color: #ffffff00;
-    color: rgb(0, 0, 0);
-    flex-direction: column;
-    border: 0;
-    margin-bottom: 1rem;
-    font-size: 95%;
+    background-image: url(img/p.jpg);
+  }
+  /* div que contiene las películas */
+  #movies {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .align-center {
+    display: flex;
     align-items: center;
-}
+  }
+  /* Cards Style */
+  .cards {
+      border-radius: 0.25rem;
+      background-color: #ffffff00;
+      color: rgb(0, 0, 0);
+      flex-direction: column;
+      border: 0;
+      margin-bottom: 1rem;
+      font-size: 95%;
+      align-items: center;
+  }
 
-.movie-container {
-  padding: 1.5rem;
-  max-width: 100rem;
-  border: 1%;
-  border-radius: 1%;
-  align-items: flex-end;
-}
-
-.card-body {
-  padding: 0.1rem;
-  min-height: 5rem;
-}
-
-.imagen {
-  position: relative;
-  width: 9.375rem;
-  height: 5rem;
-}
-
-navbar-expand-lg {
-    margin: auto;
-}
-
-navbar-expand {
-    margin: auto;
-}
-
-.btns {
-    border:0rem;
-    width: 9.81rem;
-    background-color: rgb(233, 92, 36);
-    font-style: italic;
-    color: white;
-}
-
-.img-card{
-    width: 9.81rem;
-    height: 14.75rem;
-}
-
-.img-modal{
-    width: 10rem;
-    height: 15rem;
-}
-
-.modal-header{
-    font: fantasy;
-}
+  .movie-container {
+    padding: 1.5rem;
+    max-width: 100rem;
+    border: 1%;
+    border-radius: 1%;
+    align-items: flex-end;
+  }
+  
+  .card-body {
+    padding: 0.1rem;
+    min-height: 5rem;
+  }
+  
+  
+  .imagen {
+    position: relative;
+    width: 9.375rem;
+    height: 5rem;
+  }
+  
+  /* Navbar style */
+  navbar-expand-lg {
+      margin: auto;
+  }
+  
+  navbar-expand {
+      margin: auto;
+  }
+  /* Misceláneos */
+  .btns {
+      border:0rem;
+      width: 9.81rem;
+      background-color: rgb(233, 92, 36);
+      font-style: italic;
+      color: white;
+  }
+  
+  .img-card{
+      width: 9.81rem;
+      height: 14.75rem;
+  }
+  /* Modals Style */
+  .img-modal{
+      width: 10rem;
+      height: 15rem;
+  }
+  
+  .modal-header{
+      font: fantasy;
+  }
