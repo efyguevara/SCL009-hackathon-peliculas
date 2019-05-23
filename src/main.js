@@ -53,7 +53,6 @@ window.onload = () => {
                 let poster = element.poster_path
                 let imageUrl = `https://image.tmdb.org/t/p/w500/${poster}`
                 if (element.poster_path === null) {
-                    //alert('holiii')
                     element.poster_path = imageUrl = 'img/no.png'
                 }
                 list.innerHTML +=
@@ -140,7 +139,6 @@ window.onload = () => {
                     let poster = element.poster_path
                     let imageUrl = `https://image.tmdb.org/t/p/w500/${poster}`
                     if (element.poster_path === null) {
-                        //alert('holiii')
                         element.poster_path = imageUrl = 'img/no.png'
                     }
                     list.innerHTML +=
