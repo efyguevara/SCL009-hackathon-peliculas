@@ -1,3 +1,4 @@
+
 body {
   background-image: url(img/p.jpg);
 }
@@ -35,7 +36,6 @@ body {
   padding: 0.1rem;
   min-height: 5rem;
 }
-
 
 .imagen {
   position: relative;
