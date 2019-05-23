@@ -58,7 +58,10 @@ function movieDetails(event) {
                             <h5 class="card-title">${element.title}</h5>
                         </div>
                         <div class="row text-center">
-                            <button id="e-${element.id}" data-id="${element.id}" data-target="#modal${element.id}" data-toggle="modal" class="btn btn-lg btn-block btns btn-details">Ver más</button>
+                        <button type="button" class="btn btn-block btn-style" 
+                        id="botonModal"  data-id="${element.id}" 
+                        data-toggle="modal" data-target="#${element.id}"
+                        > ${element.id}</button>
                         </div>
                     </div>`;
             });
@@ -208,32 +211,8 @@ window.onload = () => {
             });
     })
 }
-addListenerButtonDetails.addEventListener("click", ()=> {
-    fetch(`https://api.themoviedb.org/3/find/${movieId}?${urlParams}`)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        list.innerHTML = "";
-        data.results.forEach((element) => {
-            modal +=
-    `<div class="modal fade" id="${element.id}">
-    //<div class="modal-dialog">
-      //<div class="modal-content">
-      //<div class="modal-body">
-         //<h3 class="modal-title">${element.title}</h3>
-         //<img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="Card image cap">
-             //<div class="card-body">${element.id} 
-             //<div class="text-info"> ${element.id} </div>
-            //</div>
-         //</div>
-         //<div class="modal-footer">
-           //<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-         //</div>
-       //</div>
-     //</div>
-   //</div>`;
-})})})
+
+
 //Funcion del Modal
 /*document.getElementById("btn-details").addEventListener('click', () => {
 const containerModal = document.getElementById("containerModal");
@@ -266,3 +245,64 @@ const containerModal = document.getElementById("containerModal");
 })
 document.getElementById('modal').innerHTML = modal;
 })*/
+
+/*const containerModal = document.getElementById("container-modal");
+ const loadModal = (element) => {
+   containerModal.innerHTML += `<div class="modal fade" id="${element.id}">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">X</button>
+       </div>
+       <div class="modal-body">
+              <h3 class="modal-title">${element.title}</h3>
+              <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="Card image cap">
+                  <div class="card-body">${element.id} 
+                  <div class="text-info"> ${element.id} </div>
+                 </div>
+              </div>
+              <div class="modal-footer">
+             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+             </div>
+            </div>
+          </div>`;
+ }*/
+ const movieId = event.target.getAttribute("data-id");
+ fetch(`https://api.themoviedb.org/3/find/${movieId}?${urlParams}`)
+ .then((response) => {
+     return response.json();
+ })
+ .then((data) => {
+     list.innerHTML = "";
+     data.results.forEach((element) => {
+         list.innerHTML += `<div class="modal fade" id="exampleModal${moviesID}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-md" role="document">
+
+<div class="modal-content">
+<div class="x-close">                     
+
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class = "title-modal">
+<h5>${element.id} ${element.title}</h5>  
+</div>           
+<div class= "modal-img">
+<img src =${element.poster_path} class="img-movie-poster">
+</div>
+    </div>
+                 
+                </div>
+            </div>
+        </div>`
+                            //Jquery del modal
+                            $('#exampleModal' + moviesModal.imdbID).on('shown.bs.modal', function () {
+                                $('#myInput').trigger('focus')
+                            });
+                            //imprimiendo el modal
+                            movieSearchId.innerHTML = cardsModal;
+                        });
+                
+                    })
