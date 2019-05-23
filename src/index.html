@@ -29,7 +29,8 @@
                             title="Volver a la página principal">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">¿Qué es PorCorn Family?<span class="sr-only">(current)</span></a>
+                        <a href="#modal-description" type="button" class="btn color-black" data-toggle="modal">¿Qué es
+                            PorCorn Family?<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
 
@@ -89,9 +90,40 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal de descripcion de página -->
+    <div id="modal-description" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h3 class="modal-title">¿Qué es PopCorn Family?</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                       
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+
+                            <p>PopCorn Family es una aplicación web, drigida a toda la familia. Podrás
+                                ver la
+                                información de las peliculas realizando busqueda por nombre, o, filtrando por género,
+                                año y ranking</p>
+                            <h5>Modo de uso</h5>
+                            <p>Para comenzar a utilizar PopCorn Family, dirigete las opciones que se encuentran en la
+                                parte superior de la pagina, con ellas, podras realizar filtro por género de la
+                                pelicula, año, y el ranking de las más y menos votadas.</p>
+                        </div> <div class="col-sm-12 col-md-4 col-lg-4">
+                            <img src="img/hi.png" class="img-modal mx-auto d-block rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de las cards -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
                     <h5 id="modal-title" class="modal-title"></h5>

@@ -13,7 +13,7 @@ function addListenerButtonDetails() {
     }
 }
 
-//esta funcion muestra el detalle de la pelicula seleccionada
+//Muestra el detalle de la pelicula seleccionada y lo imprime en el modal
 function movieDetails(event) {
     //parametros para armar la url
     const movieId = event.target.getAttribute("data-id");//este atributo me da el valor del ID y lo toma como parametro para la url
@@ -40,8 +40,8 @@ function movieDetails(event) {
             $('#exampleModal').modal('show');   
         })
 }
-window.onload = () => {
 
+window.onload = () => {
     //llamada a la data con los parametros que se establecieron en URLSearchParams
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=879f4d45aca2ee6235c83898a8eb220c&sort_by=popularity.desc`)
         .then((response) => {
@@ -56,7 +56,6 @@ window.onload = () => {
                     //alert('holiii')
                     element.poster_path = imageUrl = 'img/no.png'
                 }
-
                 list.innerHTML +=
                     `<div class="col-sm-12 col-md-4 col-lg-2">
                 <div class="card text-center cards">
@@ -121,11 +120,11 @@ window.onload = () => {
         filterMovies();
     })
 
+    //con esta funcion se pueden tomar varios filtros a la vez pero tambien hacerlos de manera independiente
     function filterMovies() {
         const ratedMovie = document.getElementById("rated-movie").value;
         const yearMovie = document.getElementById("year-movie").value;
         const filterMovie = document.getElementById("genre-movie").value;
-
         const params = {
             api_key: "879f4d45aca2ee6235c83898a8eb220c", with_genres: filterMovie,
             sort_by: 'vote_average.' + ratedMovie, primary_release_year: yearMovie, language: 'es-ES'
@@ -144,7 +143,6 @@ window.onload = () => {
                         //alert('holiii')
                         element.poster_path = imageUrl = 'img/no.png'
                     }
-
                     list.innerHTML +=
                         `<div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="card text-center cards">
